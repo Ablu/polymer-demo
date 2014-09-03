@@ -9,16 +9,22 @@
 <body>
     <polymer-element name="my-test">
         <template>
-            Test
-            <br />
+            <p id="test">Foo</p>
             <content></content>
         </template>
         <script>
-            Polymer('my-test');
+            Polymer('my-test', {
+                ready: function() {
+                    console.log(this.shadowRoot.querySelector('#test').innerHTML);
+                }
+            });
         </script>
     </polymer-element>
     <my-test>
-        Something inside!
+        <p id="test">Bar</p>
     </my-test>
+    <script>
+        console.log(document.querySelector('#test').innerHTML);
+    </script>
 </body>
 </html>
