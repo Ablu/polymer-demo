@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Divvvvvvvvs</title>
+    <link rel="stylesheet" href="jquery-ui-1.11.1.custom/jquery-ui.css" />
+    <script src="jquery-ui-1.11.1.custom/jquery-1.11.1.js"></script>
+    <script src="jquery-ui-1.11.1.custom/jquery-ui.js"></script>
+</head>
+<body>
+<h1>jquery-tabs:</h1>
+
+<div id="tabs">
+    <ul>
+        <li><a href="#fragment-1">One</a></li>
+        <li><a href="#fragment-2">Two</a></li>
+        <li><a href="#fragment-3">Three</a></li>
+    </ul>
+    <div id="fragment-1">
+        Tab 1
+    </div>
+    <div id="fragment-2">
+        Tab 2
+    </div>
+    <div id="fragment-3">
+        Tab 3
+    </div>
+</div>
+
+<script>
+
+    $("#tabs").tabs({ active: 1 });
+</script>
+</body>
+</html>
