@@ -1,0 +1,13 @@
+{
+  "name": "my-grid",
+  "version": "0.0.0",
+  "authors": [
+    "Erik Schilling <ablu.erikschilling@googlemail.com>"
+  ],
+  "description": "Example polyer component",
+  "license": "CC0",
+  "private": true,
+  "dependencies": {
+    "polymer": "polymer/polymer#~0.4.0"
+  }
+}
