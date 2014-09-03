@@ -1,0 +1,13 @@
+{
+  "name": "Example for tabs with polymer elements",
+  "version": "0.0.0",
+  "authors": [
+    "Erik Schilling <ablu.erikschilling@googlemail.com>"
+  ],
+  "license": "CC0",
+  "private": true,
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.4.0",
+    "paper-tabs": "polymer/paper-tabs#~0.4.0"
+  }
+}
