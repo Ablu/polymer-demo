@@ -2,11 +2,32 @@
 
 <polymer-element name="my-grid">
     <template>
-        ...
+        <table>
+            <thead>
+            <tr>
+                <template repeat="{{column in columns}}">
+                    <th>{{column}}</th>
+                </template>
+            </tr>
+            </thead>
+            <tbody>
+            <template repeat="{{row in rows}}">
+                <tr>
+                    <template repeat="{{cell in row}}">
+                        <td>{{cell}}</td>
+                    </template>
+                </tr>
+            </template>
+            </tbody>
+        </table>
     </template>
     <script>
         Polymer('my-grid', {
-
+            columns: ['test1', 'test2'],
+            rows: [
+                ['data1', 'data2'],
+                ['data3', 'data4'],
+            ]
         })
     </script>
 </polymer-element>
