@@ -8,8 +8,17 @@
     <title></title>
 </head>
 <body>
-    <my-grid>
+    <polymer-element name="my-test">
+        <template>
+            <my-grid columns="{{['test1', 'test2']}}" rows="{{[['cell1', 'cell2']]}}">
 
-    </my-grid>
+            </my-grid>
+        </template>
+        <script>
+            Polymer('my-test');
+        </script>
+    </polymer-element>
+
+    <my-test></my-test>
 </body>
 </html>
