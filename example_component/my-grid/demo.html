@@ -4,18 +4,26 @@
     <meta charset="UTF-8">
     <script src="../platform/platform.js"></script>
     <link rel="import" href="../polymer/polymer.html">
+    <link rel="import" href="../core-localstorage/core-localstorage.html">
     <link rel="import" href="my-grid.html">
     <title></title>
 </head>
 <body>
     <polymer-element name="my-test">
         <template>
-            <my-grid columns="{{['test1', 'test2']}}" rows="{{[['cell1', 'cell2']]}}">
+            <button on-click="{{addRow}}">Add row</button>
+            <core-localstorage value="{{rows}}"></core-localstorage>
+            <my-grid columns="{{['test1', 'test2']}}" rows="{{rows}}">
 
             </my-grid>
         </template>
         <script>
-            Polymer('my-test');
+            Polymer('my-test', {
+                rows: [],
+                addRow: function() {
+                    this.rows.push(['Test!!!', 'Test2!']);
+                }
+            });
         </script>
     </polymer-element>
 
